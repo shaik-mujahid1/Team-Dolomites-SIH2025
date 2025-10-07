@@ -21,22 +21,22 @@ The system includes a live map view with danger zone indication and a risk score
 - White/Dark theme switch manually.  
 
 ## 📁 Project Structure
-/index.html
-/style.css
-/script.js
-/assets (for icons/images)
+- /index.html
+- /style.css
+- /script.js
+- /assets (for icons/images)
 
 ## 🚨 Note
 This is a **UI demo** of our proposed system for Smart India Hackathon 2025.  
 IoT integration (ESP8266 + sensors) 
--MPU6050 (Gyroscope)
--Soil Moisture Sensor
--DHT11 (Temperature & Humidity Sensor)
--Vibration Sensor
--Arduino Board
--ESP8266 Wi-Fi Module
--Breadboard
--Jumper Wires
+- MPU6050 (Gyroscope)
+- Soil Moisture Sensor
+- DHT11 (Temperature & Humidity Sensor)
+- Vibration Sensor
+- Arduino Board
+- ESP8266 Wi-Fi Module
+- Breadboard
+- Jumper Wires
 
 ## 📷 Preview
 
