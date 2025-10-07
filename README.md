@@ -1,5 +1,5 @@
-# Team-Dolomites-SIH2025
-IoT-based Cloudburst Detection Dashboard - Team Dolomites# 🌦️ IoT-based Cloudburst Detection Dashboard  
+## Team-Dolomites-SIH2025
+- LandSlide Detector
 
 ## 🧠 Overview
 This dashboard demonstrates an IoT-based early warning system for cloudburst-prone regions.  
