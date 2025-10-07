@@ -31,4 +31,9 @@ This is a **UI demo** of our proposed system for Smart India Hackathon 2025.
 IoT integration (ESP8266 + sensors) can be added in the next stage.
 
 ## 📷 Preview
-  
+
+**🌞 Light Mode**
+![Dashboard Light Mode](dashboard-light.png)
+
+**🌙 Dark Mode**
+![Dashboard Dark Mode](dashboard-dark.png)
