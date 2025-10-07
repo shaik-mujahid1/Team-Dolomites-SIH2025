@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart GeoCell - Prototype</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">Team Dolomites</div>
+    <div class="controls">
+      <select id="language" title="Change language">
+        <option value="en">English</option>
+        <option value="hi">हिंदी</option>
+        <option value="te">తెలుగు</option>
+        <option value="ur">اردو</option>
+      </select>
+      <button id="themeToggle" class="theme-toggle">🌙 Dark Mode</button>
+      <!-- Manual place selection -->
+      <select id="placeSelect" title="Choose place">
+        <option value="">-- Select Place --</option>
+        <option value="Meghalaya|26.2|91.7">Meghalaya (26.2,91.7)</option>
+        <option value="Shillong|25.57|91.88">Shillong (25.57,91.88)</option>
+        <option value="Guwahati|26.14|91.74">Guwahati (26.14,91.74)</option>
+        <option value="Aizawl|23.73|92.72">Aizawl (23.73,92.72)</option>
+      </select>
+
+      <button id="centerPlaceBtn" title="Center map on selected place">📍 Go</button>
+      <button id="sosBtn" title="Send SOS to authority">🚨 Send SOS</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="left">
+      <h2 id="title">Live IoT Sensor Dashboard</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>🌧 Rainfall (mm/hr)</h3>
+          <div id="rain" class="value">--</div>
+        </div>
+        <div class="card">
+          <h3>💧 Soil Moisture (%)</h3>
+          <div id="moisture" class="value">--</div>
+        </div>
+        <div class="card">
+          <h3>🌋 Vibration Level</h3>
+          <div id="vibration" class="value">--</div>
+        </div>
+
+        <!-- New climate change cards -->
+        <div class="card">
+          <h3>☁️ Humidity (%)</h3>
+          <div id="humidity" class="value">--</div>
+        </div>
+        <div class="card">
+          <h3>🌿 CO₂ (ppm)</h3>
+          <div id="co2" class="value">--</div>
+        </div>
+        <div class="card">
+          <h3>🌡 Temp Trend (°C)</h3>
+          <div id="temperature" class="value">--</div>
+        </div>
+      </div>
+
+      <div class="analytics card">
+        <h3>Risk Score</h3>
+        <div id="riskScore" class="risk">--</div>
+        <p id="riskText">Status unknown</p>
+      </div>
+
+      <div class="trend card">
+        <h3>Rainfall Trend (recent)</h3>
+        <div id="bars" class="bars"></div>
+      </div>
+
+      <!-- Seismography graph -->
+      <div class="card">
+        <h3>Seismograph (Vibration over time)</h3>
+        <canvas id="seismoChart" height="100"></canvas>
+      </div>
+    </section>
+
+    <section class="right">
+      <h3>Live Map (Manual & Geolocation)</h3>
+        <!-- <canvas id="" height="180"></canvas> -->
+      <div id="map" class="map"></div>
+      <p class="note">Red circle = monitoring station (auto). Blue marker = your device (if allowed). Use the place selector to jump to a location.</p>
+    </section>
+  </main>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
